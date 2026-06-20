@@ -1,5 +1,5 @@
 # StellariumCatalog
-StellariumCatalog is a mod that lets you display constellations in the sky. It includes constellations from dozens of cultures. Constellation data is taken from [Stellarium](https://stellarium.org/).
+StellariumCatalog is a mod for Kitten Space Agency that lets you display constellations in the sky. It includes constellations from dozens of cultures. Constellation data is taken from [Stellarium](https://stellarium.org/). The skybox in KSA is rotated incorrectly, so the constellations in this mode are rotated to match.
 
 **Updated for KSA v2026.6.8.4680**
 
