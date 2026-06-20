@@ -1,0 +1,99 @@
+﻿using Brutal.ImGuiApi;
+using Brutal.Numerics;
+using KSA;
+using System.Globalization;
+
+namespace StellariumCatalog;
+
+internal static class IAUConstellationsRenderer {
+    private static readonly ImColor8 white = new ImColor8(255, 255, 255, 255);
+    private static readonly List<Segment> segments = new();
+
+    public static void Init() {
+        string userDocs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+        string lines_in_20_path = Path.Combine(
+            userDocs,
+            "My Games",
+            "Kitten Space Agency",
+            "mods",
+            "StellariumCatalog",
+            "lines_in_20.txt");
+
+        LoadConstellationLines(lines_in_20_path);
+    }
+
+    public static void Draw(ImDrawListPtr draw_list, Camera camera, double3 center, double radius) {
+        double3 centerD = new double3(center.X, center.Y, center.Z);
+
+        foreach(Segment segment in segments) {
+            double3 mirroredA = StarDirectionConverter.MirrorForGameSkybox(segment.A);
+            double3 mirroredB = StarDirectionConverter.MirrorForGameSkybox(segment.B);
+
+            double3 correctedA = StarDirectionConverter.RotateConstellationToGameSky(mirroredA);
+            double3 correctedB = StarDirectionConverter.RotateConstellationToGameSky(mirroredB);
+
+            double3 a = centerD + correctedA * radius;
+            double3 b = centerD + correctedB * radius;
+
+            ImDrawListExtensions.AddLine(
+                draw_list,
+                camera.EgoToScreen(a),
+                camera.EgoToScreen(b),
+                white,
+                2f);
+        }
+    }
+
+    private static void LoadConstellationLines(string path) {
+        if(!File.Exists(path)) {
+            return;
+        }
+
+        string? previousKey = null;
+        double3 previousPoint = default;
+        bool hasPreviousPoint = false;
+
+        foreach(string rawLine in File.ReadLines(path)) {
+            string line = rawLine.Trim();
+
+            if(line.Length == 0) {
+                continue;
+            }
+
+            string[] parts = line.Split(
+                (char[]?)null,
+                StringSplitOptions.RemoveEmptyEntries);
+
+            if(parts.Length < 3) {
+                continue;
+            }
+
+            double raHours = double.Parse(parts[0], CultureInfo.InvariantCulture);
+            double decDegrees = double.Parse(parts[1], CultureInfo.InvariantCulture);
+            string key = parts[2];
+
+            double3 point = StarDirectionConverter.RaDecToDirection(raHours, decDegrees);
+
+            if(hasPreviousPoint && key == previousKey) {
+                segments.Add(new Segment(previousPoint, point));
+            }
+
+            previousPoint = point;
+            previousKey = key;
+            hasPreviousPoint = true;
+        }
+    }
+    //public static float GameSkyRollDegrees = 90f;
+
+    private readonly struct Segment {
+        public readonly double3 A;
+        public readonly double3 B;
+
+        public Segment(double3 a, double3 b) {
+            A = a;
+            B = b;
+        }
+    }
+
+
+}

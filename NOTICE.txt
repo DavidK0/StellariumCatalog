@@ -1,0 +1,49 @@
+This repository contains material under multiple licenses.
+See the sections below for license information applicable to each
+component.
+
+This mod contains original code and content created by David Krug. Unless otherwise noted, original code and content are licensed under
+the terms described in LICENSE.
+
+Third-party components:
+
+1. skycultures/
+
+The contents of the skycultures directory are derived from data obtained
+from Stellarium.
+URL: https://stellarium.org/
+
+The contents of skycultures/ have been modified from the original
+distribution. All files except "constellationship.fab" and "constellation_names.eng.fab" were removed.
+
+The contents of skycultures/ are derived from Stellarium and are
+distributed under the terms of GPL-2.0.
+See LICENSES/GPL-2.0.txt for the full license text.
+
+Copyright © the respective Stellarium contributors.
+
+2. hyg_v42.csv
+
+The file hyg_v42.csv is from the HYG Star Database (David Nash)
+URL: https://astronexus.com/projects/hyg
+
+This file is licensed under CC BY-SA 4.0.
+https://creativecommons.org/licenses/by-sa/4.0/
+See LICENSES/CC_BY-SA_4.0.txt for the full license text.
+
+Copyright © David Nash.
+
+The file hyg_v42.csv is distributed without modification.
+
+3. lines_in_20.txt
+
+The files lines_in_20.txt is from Constellation Boundaries (Pierre Barbier)
+URL: https://pbarbier.com/constellations/boundaries.html
+See LICENSES/CC_BY-SA_4.0.txt for the full license text.
+
+This file is licensed under CC BY-SA 4.0.
+https://creativecommons.org/licenses/by-sa/4.0/
+
+Copyright © Pierre Barbier.
+
+The file lines_in_20.txt is distributed without modification.
