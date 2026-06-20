@@ -12,7 +12,7 @@ StellariumCatalog is a mod that lets you display constellations in the sky. It i
 2. Install [ModMenu](https://github.com/MrJeranimo/ModMenu/)
    1. Download and unzip [the latest release of ModMenu](https://github.com/MrJeranimo/ModMenu/releases/latest)
    2. Put the contents in `Kitten Space Agency\Mods\`
-3. Download and unzip the latest release of StellariumCatalog [from Github](https://github.com/DavidK0/StellariumCatalog/releases/latest) or [from SpaceDock](...)
+3. Download and unzip the latest release of StellariumCatalog [from Github](https://github.com/DavidK0/StellariumCatalog/releases/latest) or [from SpaceDock](https://spacedock.info/mod/4346/StellariumCatalog)
 4. Place the contents into `Kitten Space Agency\Mods\`. Your mod folder should look something like this:
 ```
 ├── StellariumCatalog
@@ -34,9 +34,9 @@ StellariumCatalog is a mod that lets you display constellations in the sky. It i
 5. Run KSA through StarMap
 
 ## How to use in game
-1. The constellation lines and names will be on by default.
-2. Change settings settings by using the ModMenu menu
+* The constellation lines and names will be on by default.
+* Change settings settings by using the ModMenu menu
 
 ## Links
-* [NavHud on Ahwoo Forums](...)
-* [NavHud on SpaceDock](...)
+* [NavHud on Ahwoo Forums](https://forums.ahwoo.com/threads/stellariumcatalog.1006/)
+* [NavHud on SpaceDock](https://spacedock.info/mod/4346/StellariumCatalog)
