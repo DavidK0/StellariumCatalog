@@ -1,5 +1,5 @@
 # StellariumCatalog
-StellariumCatalog is a mod for Kitten Space Agency that lets you display constellations in the sky. It includes constellations from dozens of cultures. Constellation data is taken from [Stellarium](https://stellarium.org/). The skybox in KSA is rotated incorrectly, so the constellations in this mode are rotated to match.
+StellariumCatalog is a mod for Kitten Space Agency that lets you display constellations in the sky. It includes constellations from dozens of cultures. Constellation data is sourced from [Stellarium](https://stellarium.org/). The skybox in KSA is rotated incorrectly, so the constellations in this mod are rotated to match.
 
 **Updated for KSA v2026.6.8.4680**
 
@@ -35,8 +35,8 @@ StellariumCatalog is a mod for Kitten Space Agency that lets you display constel
 
 ## How to use in game
 * The constellation lines and names will be on by default.
-* Change settings settings by using the ModMenu menu
+* Change settings by using the ModMenu menu
 
 ## Links
-* [NavHud on Ahwoo Forums](https://forums.ahwoo.com/threads/stellariumcatalog.1006/)
-* [NavHud on SpaceDock](https://spacedock.info/mod/4346/StellariumCatalog)
+* [StellariumCatalog on Ahwoo Forums](https://forums.ahwoo.com/threads/stellariumcatalog.1006/)
+* [StellariumCatalog on SpaceDock](https://spacedock.info/mod/4346/StellariumCatalog)
