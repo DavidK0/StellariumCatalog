@@ -5,7 +5,11 @@ StellariumCatalog is a mod for Kitten Space Agency that lets you display constel
 
 <img width="420" height="230" alt="promo_pic" src="https://github.com/user-attachments/assets/663343d2-83d1-4bb2-9c7e-1ffb6332f135" />
 
-## How to install
+## Getting started
+
+<details>
+<summary>How to install</summary>
+
 1. Install [StarMap](https://github.com/StarMapLoader/StarMap/)
    1. Download and unzip [the latest release of StarMap](https://github.com/StarMapLoader/StarMap/releases/latest)
    2. Run the .exe and follow the instructions
@@ -32,11 +36,17 @@ StellariumCatalog is a mod for Kitten Space Agency that lets you display constel
 │   └── ModMenu.dll
 ```
 5. Run KSA through StarMap
+</details>
 
-## How to use in game
+<details>
+<summary>How to use</summary>
+   
 * The constellation lines and names will be on by default.
 * Change settings by using the ModMenu menu
+</details>
 
-## Links
+## Community links
 * [StellariumCatalog on Ahwoo Forums](https://forums.ahwoo.com/threads/stellariumcatalog.1006/)
 * [StellariumCatalog on SpaceDock](https://spacedock.info/mod/4346/StellariumCatalog)
+
+**AI Disclaimer:** This mod was made with the help of AI.
